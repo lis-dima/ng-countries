@@ -1,0 +1,11 @@
+<div *ngIf="country" class="container my-2">
+    <div class="form-group">
+        <label for="countryNameInp">New country name</label>
+        <input [(ngModel)]="country.name" class="form-control mb-3" id="countryNameInp" aria-describedby="countryHelp"
+            placeholder="Enter name">
+        <li *ngFor="let err of errors"  class="text-danger p-2">
+           {{err}}
+        </li>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="formHandler()">{{btnText}}</button>
+</div>

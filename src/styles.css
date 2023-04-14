@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+.hover-light-grey:hover {
+    transition: 0.4s;
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+}
+.hover-light-grey {
+    transition: 0.3s;
+}
