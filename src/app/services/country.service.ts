@@ -74,14 +74,6 @@ export class CountryService {
     return req;
   }
 
-  getCountryByName(name: any, cb?: Function): Country | undefined {
-    if (this.wasItited)
-      return this._countries.find(c => c.name == name);
-    else {
-      this.loadAllFromServer(cb);
-      return undefined;
-    }
-  }
 }
 
 

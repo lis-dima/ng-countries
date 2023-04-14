@@ -3,7 +3,7 @@
         {{country.name}}
     </span>
     <div class=" d-flex justify-content-around">
-        <a class="px-3 mx-1 btn btn-light" [routerLink]="['/countries/', country.name]">Details</a>
+        <a class="px-3 mx-1 btn btn-light" [routerLink]="['/countries/', country.name]" [state]="{country: country}">Details</a>
         <a class="px-3 mx-1 btn btn-primary" [routerLink]="['/countries/edit/', country.name]">Edit</a>
         <button class="px-2 mx-2 btn btn-danger" (click)="deleteCountry()">Delete</button>
     </div>
